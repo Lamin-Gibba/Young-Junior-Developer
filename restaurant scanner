@@ -1,0 +1,53 @@
+
+import static java.util.Arrays.equals;
+import static java.util.Arrays.equals;
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author muhammad
+ */
+public class FoodPrice {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+         
+           
+           int youngAge = 0;
+           
+        
+        System.out.println("=============\t\tWelcome to Gibba's restaurant\t\t===========\nYou are our first priority we serve all kinds of food, please press (1) for Food and Drink and any other key");
+        
+        String expectedval;
+        expectedval = "1";
+        expectedval = input.next();
+        if ("1".equals(expectedval)){
+            System.out.println("Thank you for making your choice we are at your disposal soon you will be serve\n You are only charge with the Food and Drink you have chosen for only\tGMD1450  ");
+        
+        }else{
+            System.out.println("Please Enter Your age here?");
+            youngAge = input.nextInt();
+        if(youngAge >= 3 && youngAge <= 10){
+            System.out.println("Thank you Enjoy your barbequew party with the payment of \n\t\tD450 only ");
+        
+        }else{
+            if(youngAge > 10){
+            System.out.println("Thank you Enjoy barbequew your party with the payment of \n\t\tD900 only");
+            }else{
+                System.out.println("Sorry we have no service for you");
+            }
+            
+            }
+        }
+        
+        
+        
+    }
+    
+}
+
